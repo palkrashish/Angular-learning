@@ -1,0 +1,20 @@
+<form #basicform="ngForm" (ngSubmit)="getData(basicform.value)" >
+  <h2>User Regestration</h2>
+  <h5>User Name</h5>
+  <input type="text" ngModel name="user" placeholder="Please enter user name" >
+  <br />
+  <h5>User Email</h5>
+  <input type="email" ngModel name="email" placeholder="Please enter email" >
+  <br />
+  <h5>User password</h5>
+  <input type="password" ngModel name="pass" placeholder="Please enter password" >
+  <br />
+
+  <button>Submit</button>
+</form>
+
+<ul>
+  <li>{{userData.user}}</li>
+  <li>{{userData.email}}</li>
+  <li>{{userData.pass}}</li>
+</ul>
