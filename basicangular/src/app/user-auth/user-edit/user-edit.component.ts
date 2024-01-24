@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-user-edit',
+  selector: 'user',
   standalone: true,
   imports: [],
   templateUrl: './user-edit.component.html',
