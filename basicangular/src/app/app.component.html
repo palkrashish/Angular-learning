@@ -8,4 +8,8 @@
 <!-- <user></user> -->
 <app-likecomment></app-likecomment>
 
-<button (click)="getname('Ashish','Kr Pal')">Click me</button>
+<!-- <button (click)="getname('Ashish','Kr Pal')">Click me</button> -->
+
+<!-- <button (click)="getInput()" >Click Me</button> -->
+<br> <br>
+<input type="text" #hello (keyup)="getInput(hello.value)" placeholder="event example">

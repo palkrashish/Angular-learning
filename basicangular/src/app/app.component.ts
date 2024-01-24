@@ -15,11 +15,16 @@ import { LikecommentComponent } from './user-auth/likecomment/likecomment.compon
 export class AppComponent {
   title = ', lets learn Angular step by step';
 
-  getname(name:any,secondName: any){
-    alert('Button Clicked')
-    console.log('clicked')
-    alert('name')
-    console.log('clicked1')
-    alert('secondName')
+  // getname(name:any,secondName: any){
+  //   alert('Button Clicked')
+  //   console.log('clicked')
+  //   alert('name')
+  //   console.log('clicked1')
+  //   alert('secondName')
+  // }
+
+  getInput(name:any){
+    // console.log('User Clicked')
+    console.log(name)
   }
 }
