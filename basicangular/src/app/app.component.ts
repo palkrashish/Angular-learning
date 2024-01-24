@@ -27,4 +27,9 @@ export class AppComponent {
     // console.log('User Clicked')
     console.log(name)
   }
+  displayVal = '';
+  getValue(val: any){
+    console.log('value print')
+    this.displayVal=val
+  }
 }

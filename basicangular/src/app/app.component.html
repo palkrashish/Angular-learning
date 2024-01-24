@@ -1,4 +1,4 @@
-<h1>Hello Guest {{title}} </h1>
+<h1>Hello Guest {{ title }}</h1>
 
 <app-login>Hello</app-login>
 <app-login>Hello</app-login>
@@ -11,5 +11,32 @@
 <!-- <button (click)="getname('Ashish','Kr Pal')">Click me</button> -->
 
 <!-- <button (click)="getInput()" >Click Me</button> -->
-<br> <br>
-<input type="text" #hello (keyup)="getInput(hello.value)" placeholder="event example">
+<br />
+<br />
+<input
+  type="text"
+  #hello
+  (keyup)="getInput(hello.value)"
+  placeholder="event example"
+/>
+<br /><br />
+
+<input
+  type=" text"
+  #hello1
+  (blur)="getInput(hello1.value)"
+  placeholder="example of blue"
+/>
+
+<!-- Get value on keyup change and display -->
+<br />
+<hr />
+
+<input
+  type="text"
+  #box
+  (keyup)="getValue(box.value)"
+  name="value"
+  placeholder="Display value on screen"
+/>
+<p>Now print box value: {{displayVal}} </p>
