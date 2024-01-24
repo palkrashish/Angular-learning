@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { LoginComponent } from './login/login.component';
+import { IfelseconditionComponent } from './ifelsecondition/ifelsecondition.component';
+import { ForloopComponent } from './forloop/forloop.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, LoginComponent,IfelseconditionComponent,ForloopComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -21,4 +24,6 @@ count = 0;
     type==='add'?this.count++:this.count--;
 
   }
+show= false;
+
 }
