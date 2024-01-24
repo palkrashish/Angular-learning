@@ -14,4 +14,8 @@ import { LikecommentComponent } from './user-auth/likecomment/likecomment.compon
 })
 export class AppComponent {
   title = ', lets learn Angular step by step';
+
+  getname(){
+    alert('Button Clicked')
+  }
 }
