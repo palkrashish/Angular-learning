@@ -1,17 +1,18 @@
 import { Component } from '@angular/core';
+import { NgbProgressbarModule  } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-toggle-button',
   standalone: true,
-  imports: [],
+  imports: [NgbProgressbarModule],
   templateUrl: './toggle-button.component.html',
-  styleUrl: './toggle-button.component.css'
+  styleUrl: './toggle-button.component.css',
 })
 export class ToggleButtonComponent {
-  display= true;
-  Toggle(){
-    console.log('hello')
-    this.display=!this.display
+  // active = 1;
+  display = true;
+  Toggle() {
+    console.log('hello');
+    this.display = !this.display;
   }
-
 }
